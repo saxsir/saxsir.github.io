@@ -24,17 +24,58 @@
     #goog-wm-sb:hover, #goog-wm-sb:focus { border-color: #aaa; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); background-color: #f8f8f8; }
     #goog-wm-qt:focus, #goog-wm-sb:focus { border-color: #105cb6; outline: 0; color: #222; }
     input::-moz-focus-inner { padding: 0; border: 0; }
+
+    div.dq1 {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px;
+ 
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+ 
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 80%;
+    }
+    
+    a:link {
+    color: white;
+    }
+    
+    a:visited {
+    color: red;
+    }
+    
+    a:hover {
+    color: blue;
+    }
+    
+    a:active {
+    color: white;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Not found <span>:(</span></h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-    <p>It looks like this was the result of either:</p>
-    <ul>
-      <li>a mistyped address</li>
-      <li>an out-of-date link</li>
-    </ul>
+    <div class="dq1">
+      <p>へんじがない　ただの404ページのようだ</p>
+    </div>
+    
+    <div class="dq1">
+      <p>もし　わしの　みかたになれば　せかいの　はんぶんを　おぬしに　やろう。</p>
+    </div>
+    
+    <div class="dq1">
+      <ul>
+	<li><a href="http://saxsir.github.com/" title="トップページへ戻る">トップページへ戻る？</a></li>
+	<li><a href="javascript:window.history.back();" title="一つ前のページへ戻る">前のページへ戻る？</a></li>
+	<li><a href="http://saxsir.github.com/projects" title="プロジェクトページ一覧を見る">プロジェクトページ一覧を見てみる？</a></li>
+	<li><a href="javascript:window.alert('おっとだんな。だれからききました？これはちょっと値が張りますよ。いいですか？（なにも起こりません）');" style="color: black;">ペルポイの町の道具屋さん</a></li>
+      </ul>
+    </div>
     <script>
       var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
     </script>
