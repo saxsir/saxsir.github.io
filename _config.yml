@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: ささログ
 markdown: redcarpet
 pygments: true
+exclude: ['Gemfile','Gemfile.lock','vendor']
