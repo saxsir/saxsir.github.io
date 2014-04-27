@@ -2,7 +2,8 @@
 layout: post
 title:  "jekyll + GitHub Pagesでブログ構築"
 date:   2014-04-26 10:14:00
-categories: jekyll GitHub-Pages
+categories: website
+tags: jekyll GitHub-Pages
 ---
 
 元々普通にhtmlで書いていたユーザーページを、jekyllで簡単に更新できるようにしました。
