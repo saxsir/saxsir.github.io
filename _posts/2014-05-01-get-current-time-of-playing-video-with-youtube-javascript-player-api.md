@@ -6,12 +6,9 @@ categories: website
 tags: JavaScript YouTube
 ---
 
-YouTube JavaScript Player API（[http://bit.ly/1n6VZ7U][1]）を使って
+YouTube JavaScript Player APIを使って、ホームページにYouTubeの動画を埋め込む & 再生時間を取得するサンプルをつくりました。→ [http://jsdo.it/saxsir/30zA][2]
 
-- ホームページにYouTubeの動画を埋め込む
-- 動画の再生時間を取得する
-
-サンプルをつくりました。→ [http://jsdo.it/saxsir/30zA][2]
+[![サンプルページ](//farm8.staticflickr.com/7295/14082687851_477d048279.jpg)][2]
 
 ---
 
@@ -25,7 +22,7 @@ Ad adLoadError error: No ads were found in the ad response. At least one ad is r
 と怒られた。2014年5月2日時点で結構同じことで困ってる人もいるようで解決策がなかなか見つからなかったが、偶然
 
 ```js
-var youtubeUrl = 'http://www.youtube.com/v/c2y8Ba3WwPY?enablejsapi=1'
+var youtubeUrl = 'http://www.youtube.com/v/h03Sxiv6zzk?enablejsapi=1'
 ```
 
 を
