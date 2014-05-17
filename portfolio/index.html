@@ -1,0 +1,60 @@
+---
+layout: default
+title: Portfolio | ささログ
+portfolio:
+
+ - text: 「ちょっとプログラミング言語つくってみるw」プロジェクト
+   url: https://github.com/saxsir/stone
+   desc: 2012年秋学期の研究会勉強テーマ
+
+ - text: ファインディング・キチガイ
+   url: http://count-grass.herokuapp.com/
+   desc: 友人との何気ない会話から2013年春くらいに制作. 2014年5月17日に確認したところ, twitter認証が動かなくなってた...
+
+ - text: お前ら友達になれると思うよ
+   url: http://saxsir.github.io/ygcbf/
+   desc: 2013年春学期の研究会勉強テーマが集合知だったので, それのデモ用に実装.
+
+ - text: JavaScriptコードを可視化する研究
+   url: http://hhlab2013a-sv.github.io/VisualizeJS/
+   desc: 2013年秋学期の研究会プロジェクト（2014年春現在も継続中）
+
+ - text: そつぷろタイマー
+   url: http://saxsir.github.io/so2proTimer/
+   desc: 卒論がつらくて実装. 今は15卒の人用に修正してある.
+
+ - text: tomチャット
+   url: http://sandbox.in.net/tomchat/public/
+   desc: websocketで遊んでみたくて実装.
+
+ - text: このサイト
+   url: http://saxsir.github.io/
+   desc: jekyllでブログ構築してみた
+
+ - text: 宝さがしゲーム
+   url: http://saxsir.github.io/treasure-map/
+   desc: 大学の授業の最終課題サンプルとして制作. 自分で考えてつくってもらうために, あえてあんまり作りこんでいないところが工夫点だったりする.
+
+
+
+
+---
+
+<div id="portfolio">
+  <div class="info">
+    <p>
+      このサイトでは、saxsirが、趣味でつくったサイトを載せたり、研究したことを書いたり、<br />ときどき何かつぶやいたりしています。
+    </p>
+  </div>
+  <h1>ポートフォリオ</h1>
+  <ul>
+    {% for link in page.portfolio %}
+    <li>
+      <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
+      <p>
+        {{link.desc}}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
