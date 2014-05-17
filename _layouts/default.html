@@ -1,3 +1,11 @@
+---
+navigation:
+ - text: Home
+   url: /
+ - text: Portfolio
+   url: /portfolio/
+---
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +26,10 @@
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            {% assign url = page.url|remove:'index.html' %}
+            {% for link in page.navigation %}
+            <a href="{{link.url}}" title="{{link.text}}" {% if url == link.url %}class="active"{% else %}class="extra"{% endif %}>{{link.text}}</a>
+            {% endfor %}
             <!-- @todo: そのうちコンテンツが増えたら追加する -->
             <!--
             <a class="extra" href="categories">categories</a>

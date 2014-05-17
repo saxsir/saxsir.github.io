@@ -85,6 +85,10 @@ a:visited { color: #a0a; }
   color: #000;
 }
 
+.header a.active {
+  margin-left: 1em;
+}
+
 .header a.extra {
   color: #aaa;
   margin-left: 1em;
